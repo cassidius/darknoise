@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Grid Template for Bootstrap</title>
+    <title>Dark Noise</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 	
 	<!-- Custom styles for this site -->
 	<link href="../../dist/css/darknoise.css" rel="stylesheet">
-	<link href="../../dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+	<link href="../dist/skin/blue.monday/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 	
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -46,7 +46,26 @@
 				<source src="../../assets/sounds/truck-backup.wav" type="audio/wav"/>
 			</audio>
 		</div>
-        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+			<div id="jp_container_1" class="jp-audio-stream" role="application" aria-label="media player">
+				<h1 class="icon" >&#xe9b0;</h1>
+				<div class="jp-type-single">
+					<div class="jp-gui jp-interface">
+						<div class="jp-volume-controls">
+							<div class="jp-volume-bar">
+								<div class="jp-volume-bar-value"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="jp-no-solution">
+						<span>Update Required</span>
+						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+					</div>
+				</div>
+			</div>
+		</div>
         <div class="col-md-4">.col-md-4</div>
       </div>
 	   <div class="row">
@@ -66,8 +85,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 	<script src="../js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="../../lib/jquery.min.js"></script>
-	<script type="text/javascript" src="../../dist/jplayer/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="../dist/jplayer/jquery.jplayer.min.js"></script>
 	<script src="../js/darknoise.js"></script>
   </body>
 </html>

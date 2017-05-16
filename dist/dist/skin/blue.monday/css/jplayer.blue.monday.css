@@ -279,17 +279,17 @@
 .jp-volume-bar {
   position: absolute;
   overflow: hidden;
-  background: url("../image/jplayer.blue.monday.jpg") 0 -250px repeat-x;
+  background: url("../image/jplayer.blue.monday.jpg") 0 -202px repeat-x;
   top: 5px;
-  left: 22px;
+  left: 0px;
   width: 46px;
-  height: 5px;
+  height: 16px;
   cursor: pointer; }
 
 .jp-volume-bar-value {
-  background: url("../image/jplayer.blue.monday.jpg") 0 -256px repeat-x;
+  background: url("../image/jplayer.blue.monday.jpg") 0 -218px repeat-x;
   width: 0px;
-  height: 5px; }
+  height: 18px; }
 
 /* @end */
 /* @group current time and duration */
