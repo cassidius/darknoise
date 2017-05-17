@@ -16,7 +16,7 @@ $( document ).ready(function() {
 		   $("#jquery_jplayer_1").jPlayer("play");
 		},  
 		swfpath:"js",
-		volume: "0.2",
+		volume: "0.0",
 		supplied: "wav",
 		wmode: "window",
 		useStateClassSkin: true,
