@@ -284,7 +284,8 @@
   left: 0px;
   width: 46px;
   height: 16px;
-  cursor: pointer; }
+  cursor: pointer;
+transform:scale(2);  }
 
 .jp-volume-bar-value {
   background: url("../image/jplayer.blue.monday.jpg") 0 -218px repeat-x;
