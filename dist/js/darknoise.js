@@ -19,6 +19,22 @@ $( document ).ready(function() {
 		title: "Nails on chalkboard",
 		mp3: "../../assets/sounds/nails.mp3"
 	};
+	var stream6 = {
+		title: "Grinder",
+		mp3: "../../assets/sounds/grinder.mp3"
+	};
+	var stream7 = {
+		title: "Female scream",
+		wav: "../../assets/sounds/scream.wav"
+	};
+	var stream8 = {
+		title: "Dentist drill",
+		mp3: "../../assets/sounds/dentist.mp3"
+	};
+	var stream9 = {
+		title: "Car alarm",
+		mp3: "../../assets/sounds/car-alarm.mp3"
+	};
 	ready = false;
 
 	$("#jquery_jplayer_1").jPlayer({
@@ -109,6 +125,78 @@ $( document ).ready(function() {
 		wmode: "window",
 		useStateClassSkin: true,
 		cssSelectorAncestor: "#jp_container_5",
+		autoBlur: false
+	});
+	$("#jquery_jplayer_6").jPlayer({
+		ready: function (event) {
+			ready = true;
+			$(this).jPlayer("setMedia", stream6);
+			$(this).jPlayer("setMedia", stream6).jPlayer("play");
+		},
+		loop: true,
+		canplay: function() {
+		   $("#jquery_jplayer_6").jPlayer("play");
+		},  
+		swfpath:"js",
+		volume: "0.0",
+		supplied: "mp3",
+		wmode: "window",
+		useStateClassSkin: true,
+		cssSelectorAncestor: "#jp_container_6",
+		autoBlur: false
+	});
+	$("#jquery_jplayer_7").jPlayer({
+		ready: function (event) {
+			ready = true;
+			$(this).jPlayer("setMedia", stream7);
+			$(this).jPlayer("setMedia", stream7).jPlayer("play");
+		},
+		loop: true,
+		canplay: function() {
+		   $("#jquery_jplayer_7").jPlayer("play");
+		},  
+		swfpath:"js",
+		volume: "0.0",
+		supplied: "wav",
+		wmode: "window",
+		useStateClassSkin: true,
+		cssSelectorAncestor: "#jp_container_7",
+		autoBlur: false
+	});
+	$("#jquery_jplayer_8").jPlayer({
+		ready: function (event) {
+			ready = true;
+			$(this).jPlayer("setMedia", stream8);
+			$(this).jPlayer("setMedia", stream8).jPlayer("play");
+		},
+		loop: true,
+		canplay: function() {
+		   $("#jquery_jplayer_6").jPlayer("play");
+		},  
+		swfpath:"js",
+		volume: "0.0",
+		supplied: "mp3",
+		wmode: "window",
+		useStateClassSkin: true,
+		cssSelectorAncestor: "#jp_container_8",
+		autoBlur: false
+	});
+	$("#jquery_jplayer_9").jPlayer({
+		ready: function (event) {
+			ready = true;
+			$(this).jPlayer("setMedia", stream9);
+			$(this).jPlayer("setMedia", stream9).jPlayer("play");
+		},
+		loop: true,
+		canplay: function() {
+		   $("#jquery_jplayer_9").jPlayer("play");
+		},  
+		swfpath:"js",
+		volume: "0.0",
+		supplied: "mp3",
+		wmode: "window",
+		useStateClassSkin: true,
+		cssSelectorAncestor: "#jp_container_9",
 		autoBlur: false
 	});
 });
