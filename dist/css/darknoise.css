@@ -29,3 +29,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.bod1{
+	background-color:rgba(86,61,124,.15);
+}
+.dn-section{
+	background-color:#fff;
+}
+.jp-audio-stream .jp-interface{
+	background-color:#fff;
+}
