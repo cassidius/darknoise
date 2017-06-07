@@ -199,4 +199,32 @@ $( document ).ready(function() {
 		cssSelectorAncestor: "#jp_container_9",
 		autoBlur: false
 	});
+	
+	var sfx_data =  
+			{id: "10", icon: "&#xe9b1;",title:"baby",location:"../../assets/sounds/car-alarm.mp3"};
+	//Build the templates
+	var source   = $("#entry-template").html();
+	var template = Handlebars.compile(source);
+	var html    = template(sfx_data);
+	$(".container").append(html);
+	//Assign the players to each
+	$("#jquery_jplayer_10").jPlayer({
+		ready: function (event) {
+			ready = true;
+			$(this).jPlayer("setMedia", stream9);
+			$(this).jPlayer("setMedia", stream9).jPlayer("play");
+		},
+		loop: true,
+		canplay: function() {
+		   $("#jquery_jplayer_10").jPlayer("play");
+		},  
+		swfpath:"js",
+		volume: "0.0",
+		supplied: "mp3",
+		wmode: "window",
+		useStateClassSkin: true,
+		cssSelectorAncestor: "#jp_container_10",
+		autoBlur: false
+	});
+	
 });
