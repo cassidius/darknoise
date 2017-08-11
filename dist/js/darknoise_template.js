@@ -10,18 +10,8 @@ $( document ).ready(function() {
 			{id: "8", icon: "<i class=\"fa fa-user-md fa-6\" aria-hidden=\"true\"></i>"},
 			{id: "9", icon: "<i class=\"fa fa-car fa-6\" aria-hidden=\"true\"></i>"}
 			];
-	//Build the templates
-	Handlebars.registerHelper('ifIsNthItem', function(options) {
-		  var index = options.data.index + 1,
-			  nth = options.hash.nth;
-
-		  if (index % nth === 0) 
-			return options.fn(this);
-		  else
-			return options.inverse(this);
-		});
 	var source   = $("#entry-template").html();
 	var template = Handlebars.compile(source);
 	var html    = template(sfx_data);
-	$(".container").append(html);
+	$(".row").append(html);
 });

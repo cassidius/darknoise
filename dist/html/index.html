@@ -32,7 +32,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<script id="entry-template" type="text/x-handlebars-template">
-		<div class="col-md-4 dn-section"">
+	
+	{{#each .}}
+	<div class="col-md-4 dn-section">
 		<div id="jquery_jplayer_{{id}}" class="jp-jplayer"></div>
 		<div id="jp_container_{{id}}" class="jp-audio-stream dn-section" role="application" aria-label="media player">
 			<h1 class="icon dn-section" >{{{icon}}}</h1>
@@ -50,6 +52,8 @@
 				</div>
 			</div>
 		</div>
+	</div>
+		{{/each}}
 	</script>
   </head>
 
@@ -60,186 +64,6 @@
         <h1>Murk Noise</a></h1>
       </div>
       <div class="row">
-        <div class="col-md-4 dn-section">
-		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-			<div id="jp_container_1" class="jp-audio-stream  dn-section" role="application" aria-label="media player">
-				<h1 class="icon dn-section" >&#xe9b0;</h1>
-				<div class="jp-type-single">
-					<div class="jp-gui jp-interface">
-						<div class="jp-volume-controls">
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 dn-section"">
-			<div id="jquery_jplayer_2" class="jp-jplayer"></div>
-			<div id="jp_container_2" class="jp-audio-stream dn-section" role="application" aria-label="media player">
-				<h1 class="icon dn-section" >&#xe9af;</h1>
-				<div class="jp-type-single">
-					<div class="jp-gui jp-interface">
-						<div class="jp-volume-controls">
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div>
-		</div>
-        	<div class="col-md-4 dn-section"">
-			<div id="jquery_jplayer_3" class="jp-jplayer"></div>
-			<div id="jp_container_3" class="jp-audio-stream dn-section" role="application" aria-label="media player">
-				<h1 class="icon dn-section" >&#xe999;</h1>
-				<div class="jp-type-single">
-					<div class="jp-gui jp-interface">
-						<div class="jp-volume-controls">
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div>
-		</div>
-     
-	   <div class="col-md-4 dn-section"">
-			<div id="jquery_jplayer_4" class="jp-jplayer"></div>
-			<div id="jp_container_4" class="jp-audio-stream dn-section" role="application" aria-label="media player">
-				<h1 class="icon dn-section" ><i class="fa fa-child fa-6" aria-hidden="true"></i></h1>
-				<div class="jp-type-single">
-					<div class="jp-gui jp-interface">
-						<div class="jp-volume-controls">
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div>
-		</div>
-        <div class="col-md-4 dn-section"">
-			<div id="jquery_jplayer_5" class="jp-jplayer"></div>
-			<div id="jp_container_5" class="jp-audio-stream dn-section" role="application" aria-label="media player">
-				<h1 class="icon dn-section" ><i class="fa fa-hand-paper-o fa-6" aria-hidden="true"></i></h1>
-				<div class="jp-type-single">
-					<div class="jp-gui jp-interface">
-						<div class="jp-volume-controls">
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div>
-		</div>
-          <div class="col-md-4 dn-section"">
-			<div id="jquery_jplayer_6" class="jp-jplayer"></div>
-			<div id="jp_container_6" class="jp-audio-stream dn-section" role="application" aria-label="media player">
-				<h1 class="icon dn-section" ><i class="fa fa-cogs fa-6" aria-hidden="true"></i></h1>
-				<div class="jp-type-single">
-					<div class="jp-gui jp-interface">
-						<div class="jp-volume-controls">
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div>
-		</div>
-           <div class="col-md-4 dn-section"">
-			<div id="jquery_jplayer_7" class="jp-jplayer"></div>
-			<div id="jp_container_7" class="jp-audio-stream dn-section" role="application" aria-label="media player">
-				<h1 class="icon dn-section" >&#xe9DD;</h1>
-				<div class="jp-type-single">
-					<div class="jp-gui jp-interface">
-						<div class="jp-volume-controls">
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-					</div>
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div>
-		</div>
-         <div class="col-md-4 dn-section"">
-			<div id="jquery_jplayer_8" class="jp-jplayer"></div>
-			<div id="jp_container_8" class="jp-audio-stream dn-section" role="application" aria-label="media player">
-				<h1 class="icon dn-section" ><i class="fa fa-user-md fa-6" aria-hidden="true"></i></h1>
-				<div class="jp-type-single">
-					<div class="jp-gui jp-interface">
-						<div class="jp-volume-controls">
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div>
-		</div>
-         <div class="col-md-4 dn-section">
-			<div id="jquery_jplayer_9" class="jp-jplayer"></div>
-			<div id="jp_container_9" class="jp-audio-stream  dn-section" role="application" aria-label="media player">
-				<h1 class="icon dn-section" ><i class="fa fa-car fa-6" aria-hidden="true"></i></h1>
-				<div class="jp-type-single">
-					<div class="jp-gui jp-interface">
-						<div class="jp-volume-controls">
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div>
-		</div>
       </div>
     
     </div> <!-- /container -->
@@ -250,6 +74,7 @@
 	<script src="../js/jquery-3.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
 	<script type="text/javascript" src="../dist/jplayer/jquery.jplayer.min.js"></script>
+	<script src="../js/darknoise_template.js"></script>
 	<script src="../js/darknoise.js"></script>
 	
   </body>

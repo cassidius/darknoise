@@ -37,194 +37,41 @@ $( document ).ready(function() {
 	};
 	ready = false;
 
-	$("#jquery_jplayer_1").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream);
-			$(this).jPlayer("setMedia", stream).jPlayer("play");
-		},
-		loop: true,
-		canplay: function() {
-		   $("#jquery_jplayer_1").jPlayer("play");
-		},  
-		swfpath:"js",
-		volume: "0.0",
-		supplied: "wav",
-		wmode: "window",
-		useStateClassSkin: true,
-		cssSelectorAncestor: "#jp_container_1",
-		autoBlur: false
-	});
-	$("#jquery_jplayer_2").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream2);
-			$(this).jPlayer("setMedia", stream2).jPlayer("play");
-		},
-		loop: true,
-		canplay: function() {
-		   $("#jquery_jplayer_2").jPlayer("play");
-		},  
-		swfpath:"js",
-		volume: "0.0",
-		supplied: "mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		cssSelectorAncestor: "#jp_container_2",
-		autoBlur: false
-	});
-	$("#jquery_jplayer_3").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream3);
-			$(this).jPlayer("setMedia", stream3).jPlayer("play");
-		},
-		loop: true,
-		canplay: function() {
-		   $("#jquery_jplayer_3").jPlayer("play");
-		},  
-		swfpath:"js",
-		volume: "0.0",
-		supplied: "mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		cssSelectorAncestor: "#jp_container_3",
-		autoBlur: false
-	});
-	$("#jquery_jplayer_4").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream4);
-			$(this).jPlayer("setMedia", stream4).jPlayer("play");
-		},
-		loop: true,
-		canplay: function() {
-		   $("#jquery_jplayer_4").jPlayer("play");
-		},  
-		swfpath:"js",
-		volume: "0.0",
-		supplied: "mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		cssSelectorAncestor: "#jp_container_4",
-		autoBlur: false
-	});
-	$("#jquery_jplayer_5").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream5);
-			$(this).jPlayer("setMedia", stream5).jPlayer("play");
-		},
-		loop: true,
-		canplay: function() {
-		   $("#jquery_jplayer_5").jPlayer("play");
-		},  
-		swfpath:"js",
-		volume: "0.0",
-		supplied: "mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		cssSelectorAncestor: "#jp_container_5",
-		autoBlur: false
-	});
-	$("#jquery_jplayer_6").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream6);
-			$(this).jPlayer("setMedia", stream6).jPlayer("play");
-		},
-		loop: true,
-		canplay: function() {
-		   $("#jquery_jplayer_6").jPlayer("play");
-		},  
-		swfpath:"js",
-		volume: "0.0",
-		supplied: "mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		cssSelectorAncestor: "#jp_container_6",
-		autoBlur: false
-	});
-	$("#jquery_jplayer_7").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream7);
-			$(this).jPlayer("setMedia", stream7).jPlayer("play");
-		},
-		loop: true,
-		canplay: function() {
-		   $("#jquery_jplayer_7").jPlayer("play");
-		},  
-		swfpath:"js",
-		volume: "0.0",
-		supplied: "wav",
-		wmode: "window",
-		useStateClassSkin: true,
-		cssSelectorAncestor: "#jp_container_7",
-		autoBlur: false
-	});
-	$("#jquery_jplayer_8").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream8);
-			$(this).jPlayer("setMedia", stream8).jPlayer("play");
-		},
-		loop: true,
-		canplay: function() {
-		   $("#jquery_jplayer_6").jPlayer("play");
-		},  
-		swfpath:"js",
-		volume: "0.0",
-		supplied: "mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		cssSelectorAncestor: "#jp_container_8",
-		autoBlur: false
-	});
-	$("#jquery_jplayer_9").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream9);
-			$(this).jPlayer("setMedia", stream9).jPlayer("play");
-		},
-		loop: true,
-		canplay: function() {
-		   $("#jquery_jplayer_9").jPlayer("play");
-		},  
-		swfpath:"js",
-		volume: "0.0",
-		supplied: "mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		cssSelectorAncestor: "#jp_container_9",
-		autoBlur: false
-	});
-	
-	var sfx_data =  
-			{id: "10", icon: "&#xe9b1;",title:"baby",location:"../../assets/sounds/car-alarm.mp3"};
-	//Build the templates
-	var source   = $("#entry-template").html();
-	var template = Handlebars.compile(source);
-	var html    = template(sfx_data);
-	$(".container").append(html);
-	//Assign the players to each
-	$("#jquery_jplayer_10").jPlayer({
-		ready: function (event) {
-			ready = true;
-			$(this).jPlayer("setMedia", stream9);
-			$(this).jPlayer("setMedia", stream9).jPlayer("play");
-		},
-		loop: true,
-		canplay: function() {
-		   $("#jquery_jplayer_10").jPlayer("play");
-		},  
-		swfpath:"js",
-		volume: "0.0",
-		supplied: "mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		cssSelectorAncestor: "#jp_container_10",
-		autoBlur: false
-	});
+	//Define settings for each player div
+	var jPlayerCfgs = [
+		{stream: stream, playerId: "#jquery_jplayer_1",type:"wav",cssSelectorlocation:"#jp_container_1"},
+		{stream: stream2, playerId: "#jquery_jplayer_2",type:"mp3",cssSelectorlocation:"#jp_container_2"},
+		{stream: stream3, playerId: "#jquery_jplayer_3",type:"mp3",cssSelectorlocation:"#jp_container_3"},
+		{stream: stream4, playerId: "#jquery_jplayer_4",type:"mp3",cssSelectorlocation:"#jp_container_4"},
+		{stream: stream5, playerId: "#jquery_jplayer_5",type:"mp3",cssSelectorlocation:"#jp_container_5"},
+		{stream: stream6, playerId: "#jquery_jplayer_6",type:"mp3",cssSelectorlocation:"#jp_container_6"},
+		{stream: stream7, playerId: "#jquery_jplayer_7",type:"wav",cssSelectorlocation:"#jp_container_7"},
+		{stream: stream8, playerId: "#jquery_jplayer_8",type:"mp3",cssSelectorlocation:"#jp_container_8"},
+		{stream: stream9, playerId: "#jquery_jplayer_9",type:"mp3",cssSelectorlocation:"#jp_container_9"}
+	];
+	var j=0;
+	//Assign the settings for each player to each div
+	for(var i=0; i < jPlayerCfgs.length; i++){
+		var cfg = jPlayerCfgs[i];
+		console.log(cfg.playerId);
+		$(cfg.playerId).jPlayer({
+			ready: function (event) {
+				ready = true;
+				$(this).jPlayer("setMedia", jPlayerCfgs[j].stream);
+				$(this).jPlayer("setMedia", jPlayerCfgs[j++].stream).jPlayer("play");
+			},
+			loop: true,
+			canplay: function() {
+			   $(cfg.playerId).jPlayer("play");
+			},  
+			swfpath:"js",
+			volume: "0.0",
+			supplied:cfg.type,
+			wmode: "window",
+			useStateClassSkin: true,
+			cssSelectorAncestor: cfg.cssSelectorlocation,
+			autoBlur: false
+		});
+	}
 	
 });
