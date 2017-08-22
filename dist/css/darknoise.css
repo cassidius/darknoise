@@ -38,3 +38,10 @@
 .jp-audio-stream .jp-interface{
 	background-color:#fff;
 }
+html { 
+  background: url(../img/industry-sunrise-clouds-fog-39553.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
