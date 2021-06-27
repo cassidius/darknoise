@@ -1,39 +1,39 @@
 $( document ).ready(function() {
     var stream = {
 		title: "Truck",
-		wav: "../assets/sounds/truck-backup.wav"
+		wav: "./dist/assets/sounds/truck-backup.wav"
 	};
 	var stream2 = {
 		title: "Air siren",
-		mp3: "../assets/sounds/air-raid.mp3"
+		mp3: "./dist/assets/sounds/air-raid.mp3"
 	};
 	var stream3 = {
 		title: "Bugs",
-		mp3: "../assets/sounds/swarm.mp3"
+		mp3: "./dist/assets/sounds/swarm.mp3"
 	};
 	var stream4 = {
 		title: "Baby",
-		mp3: "../assets/sounds/baby.mp3"
+		mp3: "./dist/assets/sounds/baby.mp3"
 	};
 	var stream5 = {
 		title: "Nails on chalkboard",
-		mp3: "../assets/sounds/nails.mp3"
+		mp3: "./dist/assets/sounds/nails.mp3"
 	};
 	var stream6 = {
 		title: "Grinder",
-		mp3: "../assets/sounds/grinder.mp3"
+		mp3: "./dist/assets/sounds/grinder.mp3"
 	};
 	var stream7 = {
 		title: "Dialup",
-		wav: "../assets/sounds/dialup.mp3"
+		wav: "./dist/assets/sounds/dialup.mp3"
 	};
 	var stream8 = {
 		title: "Dentist drill",
-		mp3: "../assets/sounds/dentist.mp3"
+		mp3: "./dist/assets/sounds/dentist.mp3"
 	};
 	var stream9 = {
 		title: "Car alarm",
-		mp3: "../assets/sounds/car-alarm.mp3"
+		mp3: "./dist/assets/sounds/car-alarm.mp3"
 	};
 	ready = false;
 
