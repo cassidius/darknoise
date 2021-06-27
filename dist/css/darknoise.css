@@ -4,7 +4,10 @@
     font-weight: normal;
     font-style: normal;
 }
-
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
 .icon {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'IcoMoon-Free' !important;
@@ -39,7 +42,7 @@
 	background-color:#fff;
 }
 html { 
-  background: url(../img/industry-sunrise-clouds-fog-39553.jpeg) no-repeat center center fixed; 
+  /* background: url(../assets/img/factory1.jpg) no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
