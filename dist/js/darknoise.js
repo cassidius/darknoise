@@ -24,8 +24,8 @@ $( document ).ready(function() {
 		mp3: "../assets/sounds/grinder.mp3"
 	};
 	var stream7 = {
-		title: "Scream",
-		wav: "../assets/sounds/scream.wav"
+		title: "Dialup",
+		wav: "../assets/sounds/dialup.mp3"
 	};
 	var stream8 = {
 		title: "Dentist drill",
