@@ -1,4 +1,24 @@
-$( document ).ready(function() {
+
+	// var soundeffect = document.getElementById("soundeffect_1");
+	// soundeffect.volume = 0.2;
+	//let volumeSlider = document.getElementById("volume-slider");
+	//volumeSlider.addEventListener("mouseclick", setvolume);
+	function setvolume(){
+		myAudio.volume = volumeSlider.value;
+	}
+	function setvolumeSlider(){
+		volumeSlider.value = myAudio.volume;
+	}
+	function changeVolume(src){
+		let volumeSlider = document.getElementById("volume-slider_"+src);
+		var myAudio = document.getElementById("soundeffect_"+src);
+		myAudio.volume = volumeSlider.value;
+	}
+	function onPlay(src){
+		var myAudio = document.getElementById(src);
+		myAudio.play();
+	}
+	
     var stream = {
 		title: "Truck",
 		wav: "./dist/assets/sounds/truck-backup.wav"
@@ -36,42 +56,3 @@ $( document ).ready(function() {
 		mp3: "./dist/assets/sounds/car-alarm.mp3"
 	};
 	ready = false;
-
-	//Define settings for each player div
-	var jPlayerCfgs = [
-		{stream: stream, playerId: "#jquery_jplayer_1",type:"wav",cssSelectorlocation:"#jp_container_1"},
-		{stream: stream2, playerId: "#jquery_jplayer_2",type:"mp3",cssSelectorlocation:"#jp_container_2"},
-		{stream: stream3, playerId: "#jquery_jplayer_3",type:"mp3",cssSelectorlocation:"#jp_container_3"},
-		{stream: stream4, playerId: "#jquery_jplayer_4",type:"mp3",cssSelectorlocation:"#jp_container_4"},
-		{stream: stream5, playerId: "#jquery_jplayer_5",type:"mp3",cssSelectorlocation:"#jp_container_5"},
-		{stream: stream6, playerId: "#jquery_jplayer_6",type:"mp3",cssSelectorlocation:"#jp_container_6"},
-		{stream: stream7, playerId: "#jquery_jplayer_7",type:"wav",cssSelectorlocation:"#jp_container_7"},
-		{stream: stream8, playerId: "#jquery_jplayer_8",type:"mp3",cssSelectorlocation:"#jp_container_8"},
-		{stream: stream9, playerId: "#jquery_jplayer_9",type:"mp3",cssSelectorlocation:"#jp_container_9"}
-	];
-	var j=0;
-	//Assign the settings for each player to each div
-	for(var i=0; i < jPlayerCfgs.length; i++){
-		var cfg = jPlayerCfgs[i];
-		console.log(cfg.playerId);
-		$(cfg.playerId).jPlayer({
-			ready: function (event) {
-				ready = true;
-				$(this).jPlayer("setMedia", jPlayerCfgs[j].stream);
-				$(this).jPlayer("setMedia", jPlayerCfgs[j++].stream).jPlayer("play");
-			},
-			loop: true,
-			canplay: function() {
-			   $(cfg.playerId).jPlayer("play");
-			},  
-			swfpath:"js",
-			volume: "0.0",
-			supplied:cfg.type,
-			wmode: "window",
-			useStateClassSkin: true,
-			cssSelectorAncestor: cfg.cssSelectorlocation,
-			autoBlur: false
-		});
-	}
-	
-});

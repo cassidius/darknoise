@@ -32,24 +32,15 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<script id="entry-template" type="text/x-handlebars-template">
-	
-	{{#each .}}
-		<div class="col-md-4 dn-section">
-			<div id="jquery_jplayer_{{id}}" class="jp-jplayer"></div>
-			<div id="jp_container_{{id}}" class="jp-audio-stream dn-section" role="application" aria-label="media player">
-				<h1 class="icon dn-section" >{{{icon}}}</h1>
-				<div class="jp-type-single">
-					<div class="jp-gui jp-interface">
-						<div class="jp-volume-controls">
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-					</div>
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
+		
+	 {{#each .}} 
+		<div class="col-md-4 dn-section" onclick="onPlay('soundeffect_{{id}}')">
+			<h1 class="icon dn-section" >{{{icon}}}</h1>
+			<audio autoplay loop preload="metadata"  id="soundeffect_{{id}}" src="{{sound_src}}" type="audio/mpeg">
+			</audio>
+			<div id="audio-player-container">
+				<div id="volume-container_{{id}}" onclick="changeVolume('{{id}}')">
+					<input id="volume-slider_{{id}}" type="range" min="0" max="1" value="0" step="0.05"> <br>
 				</div>
 			</div>
 		</div>
@@ -60,11 +51,11 @@
   <body>
   	<div class="page-header text-center">
         <h1>Dark Noise</h1>
-		<h5>When your day is too calm...</h5>
+		<h5>Because sure</h5>
     </div>
     <div class="container">
       <div class="row">
-	  
+		</div>
       </div>
     </div> <!-- /container -->
 
@@ -72,7 +63,6 @@
     <script src="./dist/js/ie10-viewport-bug-workaround.js"></script>
 	<script src="./dist/js/jquery-3.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
-	<script type="text/javascript" src="./dist/dist/jplayer/jquery.jplayer.min.js"></script>
 	<script src="./dist/js/darknoise_template.js"></script>
 	<script src="./dist/js/darknoise.js"></script>
 	
