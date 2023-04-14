@@ -32,7 +32,7 @@
 	 {{#each .}} 
 		<div class="col-md-4 dn-section" onclick="onPlay('soundeffect_{{id}}')">
 			<h1 class="icon dn-section" >{{{icon}}}</h1>
-			<audio loop preload="metadata"  id="soundeffect_{{id}}" src="{{sound_src}}" type="audio/mpeg">
+			<audio loop preload="metadata"  id="soundeffect_{{id}}" src="{{sound_src}}" type="audio/mp3">
 			</audio>
 			<div id="audio-player-container">
 				<div id="volume-container_{{id}}" onclick="changeVolume('{{id}}')">
